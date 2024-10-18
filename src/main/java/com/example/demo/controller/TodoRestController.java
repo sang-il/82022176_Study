@@ -58,6 +58,20 @@ public class TodoRestController {
         return ResponseEntity.ok(todoService.getModifyTodoItem(id));
     }
 
+     /**
+     * 사번 리턴
+     *
+     * @param id
+     * @return
+     */    
+    @GetMapping("/user")
+    public ResponseMap<String, String> getUser() {
+        // 사번(UserId)를 리턴하는 간단한 API
+        ResponseMap<String, String> response = new HashMap<>();
+        response.put("UserId", "82022176"); // 예시 사번 리턴
+        return response;
+    }    
+    
     /**
      * TodoItem 추가
      *
@@ -128,4 +142,6 @@ public class TodoRestController {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+
+
 }
