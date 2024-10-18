@@ -65,11 +65,11 @@ public class TodoRestController {
      * @return
      */    
     @GetMapping("/user")
-    public ResponseMap<String, String> getUser() {
+    public Map<String, String> getUser() {
         // 사번(UserId)를 리턴하는 간단한 API
-        ResponseMap<String, String> response = new HashMap<>();
-        response.put("UserId", "82022176"); // 예시 사번 리턴
-        return response;
+        HashMap<String, String> map = new HashMap<String, String>();
+        map.put("userId", "82022176"); // 예시 사번 리턴
+        return map;
     }    
     
     /**
