@@ -58,9 +58,9 @@ public class TodoRestController {
         return ResponseEntity.ok(todoService.getModifyTodoItem(id));
     }
     
-    @GetMapping("/sam/")
+    @GetMapping("/sam")
     public ResponseEntity<?> getTodoItem2() {
-        return ResponseEntity<>("888877654", HttpStatus.OK);
+        return ResponseEntity.ok("888877654");
     }
      /**
      * 사번 리턴
