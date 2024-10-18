@@ -52,7 +52,7 @@ public class TodoRestController {
      *
      * @param id
      * @return
-     */
+     
     @GetMapping(value = "/{id}")
     public ResponseEntity<?> getTodoItem(@PathVariable("id") Long id) {
         return ResponseEntity.ok(todoService.getModifyTodoItem(id));
@@ -62,6 +62,7 @@ public class TodoRestController {
     public ResponseEntity<?> getTodoItem2() {
         return ResponseEntity.ok("888877654");
     }
+    */
      /**
      * 사번 리턴
      *
