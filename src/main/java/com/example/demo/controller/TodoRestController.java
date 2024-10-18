@@ -68,7 +68,7 @@ public class TodoRestController {
      *
      * @param id
      * @return
-       
+     */  
     @GetMapping("/v1/user/")
     public Map<String, String> getUser() {
         // 사번(UserId)를 리턴하는 간단한 API
@@ -76,7 +76,7 @@ public class TodoRestController {
         map.put("userId", "82022176"); // 예시 사번 리턴
         return map;
     }    
-    */  
+    
     /**
      * TodoItem 추가
      *
