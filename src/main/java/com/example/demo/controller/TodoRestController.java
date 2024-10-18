@@ -58,7 +58,7 @@ public class TodoRestController {
         return ResponseEntity.ok(todoService.getModifyTodoItem(id));
     }
     
-    @GetMapping("/sam")
+    @GetMapping("/v1/sam")
     public ResponseEntity<?> getTodoItem2() {
         return ResponseEntity.ok("888877654");
     }
@@ -68,7 +68,7 @@ public class TodoRestController {
      * @param id
      * @return
      */    
-    @GetMapping("/user/")
+    @GetMapping("/v1/user")
     public Map<String, String> getUser() {
         // 사번(UserId)를 리턴하는 간단한 API
         HashMap<String, String> map = new HashMap<String, String>();
