@@ -20,12 +20,12 @@ spec:
             readOnly: true
                           
       volumes:
-      - name: 82022176-volume
+      - name: "82022176-volume"
         persistentVolumeClaim:
           claimName: cepg-aa-std-pvc
       - name: application-properties
         configMap:
-          name: 82022176-configmap
+          name: "82022176-configmap"
           items:
             - key: application.yml
               path: application.yml
